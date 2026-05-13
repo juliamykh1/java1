@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tutor Assistant</h1>
+        <p class="subtitle">Калькулятор курсу для викладачів</p>
+        
+        <div class="card">
+            <h3>Параметри курсу</h3>
+            <div class="input-group">
+                <label>Предмет</label>
+                <select id="subject">
+                    <option>Інформатика</option>
+                    <option>Математика</option>
+                    <option>Програмування</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label>Ціна за годину (грн)</label>
+                    <input type="number" id="price" value="300">
+                </div>
+                <div class="input-group">
+                    <label>К-сть занять</label>
+                    <input type="number" id="count" value="8">
+                </div>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="tax" checked>
+                <label for="tax">Врахувати податок (5% ФОП)</label>
+            </div>
+            <button id="calculate">Розрахувати вартість</button>
+        </div>
+
+        <div class="result-card" id="result" style="display: none;">
+            <h3>Звіт про курс</h3>
+            <div class="result-row"><span>Предмет</span><span id="res-subject"></span></div>
+            <div class="result-row"><span>Базова вартість</span><span id="res-total"></span></div>
+            <div class="result-row tax"><span>Податок (5%)</span><span id="res-tax"></span></div>
+            <div class="result-row final"><span>Чистий прибуток</span><span id="res-final"></span></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
