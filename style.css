@@ -1,0 +1,47 @@
+/* Покращений дизайн для Tutor Assistant */
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #f4f7f9; 
+    display: flex; 
+    justify-content: center; 
+    padding: 40px; 
+}
+.container { 
+    background: white; 
+    padding: 30px; 
+    border-radius: 20px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    width: 100%; 
+    max-width: 400px; 
+}
+h1 { color: #2c3e50; text-align: center; margin-bottom: 10px; }
+.subtitle { color: #7f8c8d; text-align: center; margin-bottom: 30px; font-size: 14px; }
+label { display: block; margin-bottom: 8px; font-weight: 600; color: #34495e; }
+input, select { 
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 20px; 
+    border: 1px solid #dce4ec; 
+    border-radius: 10px; 
+    box-sizing: border-box; 
+}
+button { 
+    width: 100%; 
+    padding: 15px; 
+    background-color: #3498db; 
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background 0.3s;
+}
+button:hover { background-color: #2980b9; }
+.result-card { 
+    margin-top: 25px; 
+    padding: 20px; 
+    background: #fdfdfd; 
+    border-left: 5px solid #3498db; 
+    border-radius: 5px; 
+}
